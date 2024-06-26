@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homeActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+<LinearLayout
+    android:id="@+id/linear1"
+    android:layout_marginHorizontal="3dp"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:layout_gravity="center"
+    android:background="@drawable/ic_baseline_refresh_24"
+    >
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       app:lottie_rawRes="@raw/refresh"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+</androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:src="@drawable/splash"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/arabic"
+        android:gravity="center"
+android:layout_marginRight="3dp"
+        android:text="التّحدّي الأعظم في النّحو "
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+android:layout_margin="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear1"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/brain" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="489dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2">
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/years13"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/yearsoldtextview"
+            android:fontFamily="@font/arabic"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="ثلاث عشرة سنة"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/years12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:layout_weight="1"
+            android:background="@drawable/yearsoldtextview"
+            android:fontFamily="@font/arabic"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_marginHorizontal="5dp"
+            android:text="اثنتا عشرة سنة"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/years11"
+            app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+        <TextView
+            android:id="@+id/years11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/yearsoldtextview"
+            android:fontFamily="@font/arabic"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="إحدى عشرة سنة"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/years10"
+            app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+
+
+
+        <TextView
+            android:id="@+id/years16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/yearsoldtextview"
+            android:fontFamily="@font/arabic"
+            android:padding="10dp"
+            android:text="ستّ عشرة سنة"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/years15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/yearsoldtextview"
+            android:fontFamily="@font/arabic"
+            android:padding="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:gravity="center"
+            android:text="خمس عشرة سنة"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/years14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/yearsoldtextview"
+            android:fontFamily="@font/arabic"
+            android:padding="10dp"
+            android:text="أربع عشرة سنة"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+
+        <TextView
+            android:id="@+id/years18"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/yearsoldtextview"
+            android:fontFamily="@font/arabic"
+            android:padding="10dp"
+            android:text="تسع عشرة سنة"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/years10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/yearsoldtextview"
+            android:fontFamily="@font/arabic"
+            android:padding="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:text="ثماني عشرة سنة"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/years17"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/yearsoldtextview"
+            android:fontFamily="@font/arabic"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="سبع عشرة سنة"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout3" />
+
+
+    <LinearLayout
+        android:id="@+id/website_linear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottie1">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/website"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/arabic"
+                android:gravity="right|center_vertical"
+                android:paddingRight="25dp"
+                android:text="  شبكة نحو دوت كوم"
+                android:textStyle="bold|italic"
+                android:textColor="#6798c0"
+                android:textSize="20sp"  />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:src="@drawable/website" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/youtube_linear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/website_linear">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/youtube"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/arabic"
+                android:gravity="right|center_vertical"
+                android:paddingRight="25dp"
+
+                android:textStyle="italic|bold"
+                android:text="  قناة اليوتيوب"
+                android:textColor="#6798c0"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+
+                android:layout_gravity="left"
+                android:src="@drawable/youtube_red" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/facebook_linear"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/youtube_linear">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/facebook"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textStyle="italic|bold"
+                android:fontFamily="@font/arabic"
+                android:gravity="right|center_vertical"
+                android:paddingRight="25dp"
+                android:text="  تواصل معنا على فيس بوك "
+                android:textColor="#6798c0"
+                android:textSize="20sp"  />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+
+                android:layout_gravity="left"
+                android:src="@drawable/facebook" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

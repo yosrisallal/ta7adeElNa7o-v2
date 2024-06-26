@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".level1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/clock"
+ android:gravity="center"
+            android:textColor="#1B5788"
+
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_baseline_access_time_24"
+            android:paddingLeft="15dp" />
+        <TextView
+            android:id="@+id/titlelevel"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#1B5788"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:paddingLeft="15dp" />
+<ImageView
+    android:id="@+id/exit"
+    android:src="@drawable/ic_baseline_exit_to_app_24"
+    android:scaleType="fitXY"
+    android:background="#6798c0"
+    android:layout_width="50dp"
+    android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/helpandremovelinear"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marksandqnum">
+
+
+
+        <TextView
+            android:id="@+id/remove"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/arabic"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/remove"
+            android:drawableLeft="@drawable/ic_baseline_find_replace_24"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:text="استبدل السُّؤال (  واخصم درجة  )"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/description"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helpandremovelinear" />
+
+    <TextView
+        android:id="@+id/reponse1"
+
+        android:gravity="center"
+        android:background="@drawable/response"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question" />
+
+    <TextView
+        android:id="@+id/reponse2"
+
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/response"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reponse1" />
+
+    <TextView
+        android:id="@+id/reponse3"
+
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/response"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reponse2" />
+
+    <TextView
+        android:id="@+id/reponse4"
+
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@drawable/response"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reponse3" />
+
+    <LinearLayout
+        android:id="@+id/marksandqnum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/qnum"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_quiz_marksandqnum"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:text="السؤال رقم : "
+            android:fontFamily="@font/arabic"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/MARK"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_quiz_marksandqnum"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:fontFamily="@font/arabic"
+            android:text="عدد الدرجات : "
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

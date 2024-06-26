@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+
+        <TextView
+            android:id="@+id/titled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/arabic"
+            android:text="هل تريد الخروج "
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ستفقد المستوى الذي وصلت له "
+            android:gravity="center"
+            android:padding="15dp"
+            android:fontFamily="@font/arabic"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/lineardialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/exit_quiz"
+                android:text="الخروج"
+                android:textSize="14sp"
+                android:drawableLeft="@drawable/ic_baseline_exit_to_app_24"
+                android:background="@color/black"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/arabic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+            <Button
+                android:id="@+id/cancel_dialog"
+                android:text="البقاء"
+                android:textSize="14sp"
+                android:drawableRight="@drawable/ic_baseline_arrow_back_24"
+                android:background="@color/black"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/arabic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

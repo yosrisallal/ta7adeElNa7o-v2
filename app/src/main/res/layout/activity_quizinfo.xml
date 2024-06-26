@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".quizinfo">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:fontFamily="@font/arabic"
+        android:gravity="center"
+        android:text="التّحدّي الأعظم في النّحو "
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/arabic"
+            android:gravity="center"
+            android:text="تفاصيل الاختبار"
+            android:textColor="#6798c0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/splash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/description"
+        android:fontFamily="@font/arabic"
+        android:gravity="center"
+
+        android:padding="3dp"
+        android:text="يتألَّف التَّحدِّي من 3 مراحل .. كلُّ مرحلة تتكوَّن من 10 أسئلة .. مدَّة المرحلة الأولى 5 دقائق (مع وسيلة مساعدة واحدة ) .. ومدَّة المرحلة الثَّانية 4 دقائق (مع وسيلة مساعدة واحدة ) .. ومدَّة المرحلة الثَّالثة 3 دقائق (دون وسائل مساعدة )."
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/time"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/time" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:fontFamily="@font/arabic"
+            android:gravity="center"
+            android:text=" خمس دقائق"
+            android:textStyle="bold" />
+
+
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/arabic"
+            android:gravity="center"
+            android:paddingHorizontal="2dp"
+            android:text="عشرة  أسئلة"
+            android:textStyle="bold" />
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/question" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:elevation="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/description"
+            android:text="ابدأ الاختبار "
+            android:textColor="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
