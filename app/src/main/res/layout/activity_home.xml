@@ -18,35 +18,17 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent">
 
-
-<androidx.cardview.widget.CardView
-    android:layout_width="48dp"
-    android:layout_height="48dp"
-    android:layout_gravity="center"
-    android:background="@drawable/ic_baseline_refresh_24"
-    >
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottie2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-       app:lottie_rawRes="@raw/refresh"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"/>
-</androidx.cardview.widget.CardView>
-
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
         android:layout_height="match_parent"
-        android:layout_weight="2"
         android:src="@drawable/splash"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fontFamily="@font/arabic"
         android:gravity="center"
-android:layout_marginRight="3dp"
+        android:layout_marginRight="3dp"
         android:text="التّحدّي الأعظم في النّحو "
         android:textSize="22sp"
         android:textStyle="bold" />
@@ -239,135 +221,44 @@ android:layout_margin="20dp"
 
     </LinearLayout>
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/lottie1"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearlayout3" />
-
-
     <LinearLayout
-        android:id="@+id/website_linear"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lottie1">
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout3">
 
-
-        <LinearLayout
-
+        <TextView
+            android:id="@+id/quoteText"
             android:layout_width="match_parent"
-            android:layout_height="40dp">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="8dp"
+            android:drawableLeft="@drawable/quote_left_svgrepo_com"
+            android:drawableRight="@drawable/quote_right_svgrepo_com"
+            android:fontFamily="@font/arabic"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:text="@string/quote"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="italic" />
 
-            <TextView
-                android:id="@+id/website"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/arabic"
-                android:gravity="right|center_vertical"
-                android:paddingRight="25dp"
-                android:text="  شبكة نحو دوت كوم"
-                android:textStyle="bold|italic"
-                android:textColor="#6798c0"
-                android:textSize="20sp"  />
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="40dp"
-                android:layout_gravity="left"
-                android:src="@drawable/website" />
-
-        </LinearLayout>
-
-
+        <TextView
+            android:id="@+id/authorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tajawal"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:text="@string/extractplace"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            android:textStyle="normal" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/youtube_linear"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginHorizontal="20dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/website_linear">
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp">
-
-            <TextView
-                android:id="@+id/youtube"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/arabic"
-                android:gravity="right|center_vertical"
-                android:paddingRight="25dp"
-
-                android:textStyle="italic|bold"
-                android:text="  قناة اليوتيوب"
-                android:textColor="#6798c0"
-                android:textSize="20sp" />
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="40dp"
-
-                android:layout_gravity="left"
-                android:src="@drawable/youtube_red" />
-
-        </LinearLayout>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/facebook_linear"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="5dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/youtube_linear">
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp">
-
-            <TextView
-                android:id="@+id/facebook"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_weight="1"
-                android:textStyle="italic|bold"
-                android:fontFamily="@font/arabic"
-                android:gravity="right|center_vertical"
-                android:paddingRight="25dp"
-                android:text="  تواصل معنا على فيس بوك "
-                android:textColor="#6798c0"
-                android:textSize="20sp"  />
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="40dp"
-
-                android:layout_gravity="left"
-                android:src="@drawable/facebook" />
-
-        </LinearLayout>
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

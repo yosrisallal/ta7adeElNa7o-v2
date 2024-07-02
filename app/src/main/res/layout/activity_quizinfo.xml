@@ -45,8 +45,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="20dp"
         android:src="@drawable/splash"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,13 +57,13 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="110dp"
+        android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:background="@drawable/description"
         android:fontFamily="@font/arabic"
         android:gravity="center"
-
-        android:padding="3dp"
+        android:textSize="16dp"
+        android:padding="15dp"
         android:text="يتألَّف التَّحدِّي من 3 مراحل .. كلُّ مرحلة تتكوَّن من 10 أسئلة .. مدَّة المرحلة الأولى 5 دقائق (مع وسيلة مساعدة واحدة ) .. ومدَّة المرحلة الثَّانية 4 دقائق (مع وسيلة مساعدة واحدة ) .. ومدَّة المرحلة الثَّالثة 3 دقائق (دون وسائل مساعدة )."
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
